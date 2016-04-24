@@ -2,8 +2,7 @@
   "what time is it": "Your time to shine baby! \n No, just kidding it's time for you to shut the hell up...",
   "who am I": "You are human meatbag identifer `{user}`.",
   "uptime": "`{ts}`",
-  "truthbot help": "Commands <pugme>, <catme>, <gifme>",
-  "truthbot": "Can how I help lay down some truth?",
+  "betterbot": "How can I help lay down some truth?",
   "who are you": "I'm truth bot",
   "who built you": "I'm not sure...\n AJ stole a bunch of code and here I am",
   "AJ": "That guy is the best!",
@@ -13,7 +12,7 @@
   "kittens": "They're precious treasures!",
   "slackbot": "That fucking hack?!",
   "who are you": "Your Daddy, Sugar Daddy!",
-  "milksteak": "I love that stuff!",
+  "helpme": "help",
   "pugme": "pug",
   "catme": "cat",
   "gifme": "gif"

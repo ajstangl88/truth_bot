@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-import argparse, ConfigParser, json, random
+
+
+import argparse, ConfigParser, json, random, os
 from slackclient import SlackClient
 from time import sleep
 import webutil
@@ -17,6 +19,7 @@ class Converser:
 
     def connect(self, token):
         self.client = SlackClient(token)
+        # self.client.api_call(method='file.upload')
         self.client.rtm_connect()
         self.my_user_name = self.client.server.username
         print("Connected to Slack.")
@@ -40,18 +43,25 @@ class Converser:
 
         # General Trigger words
         for topic in self.topics.keys():
+
+            # All topics
             if topic.lower() in message['text'].lower():
                 response = self.topics[topic].format(**message)
+
+                if response == "help":
+                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`\n`<Drunk Friend>`"
+
 
                 # Give one pug
                 if response == 'pug':
                     response = tools.pugme()
 
+                # Give a cat
                 if response == 'cat':
                     response = tools.catme()
 
+                # Give a gif
                 if response == 'gif':
-                    search = message
                     response = tools.gifme(message['text'])
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
@@ -101,8 +111,6 @@ if __name__ == "__main__":
         conv.business = json.load(data_file_2)
     with open('images.json') as image_file:
         conv.images = json.load(image_file)
-
-
 
 
     # Run our conversation loop.

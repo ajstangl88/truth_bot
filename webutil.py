@@ -24,5 +24,8 @@ class webmethods():
         r = [elem['url'] for elem in r['data']]
         return random.choice(r)
 
+
+
+#
 # test = webmethods()
-# print test.gifme('cats')
+# print test.mememe()
