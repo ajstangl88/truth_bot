@@ -36,8 +36,8 @@ class Converser:
         for topic in self.topics.keys():
             if topic.lower() in message['text'].lower():
                 response = self.topics[topic].format(**message)
-                if response.startswith("sys:"):
-                    response = os.popen(response[4:]).read()
+                # if response.startswith("sys:"):
+                    # response = os.popen(response[3:]).read()
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
 
@@ -52,13 +52,9 @@ class Converser:
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        description=''' This script posts responses to trigger phrases. Run with: converse.py topics.json ''',
-        epilog='''''')
+    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=''' This script posts responses to trigger phrases. Run with: converse.py topics.json ''', epilog='''''')
     parser.add_argument('-d', action='store_true', help="Print debug output.", required=False )
-    # parser.add_argument('topics_file', type=str, nargs=1,
-    #                     help='JSON of phrases/responses to read.')
+
     args = parser.parse_args()
 
     # Create a new Converser
@@ -75,16 +71,11 @@ if __name__ == "__main__":
     conv.connect(token)
 
     # Add our topics to the converser
-    # with open(args.topics_file[0]) as data_file:
-        # conv.topics = json.load(data_file)
+    with open('topics.json') as data_file:
+        conv.topics = json.load(data_file)
 
 
-    conv.topics = {
-        "what time is it": "Your time to shine baby! \n"
-        " No, just kidding it's time for you to shut the hell up...",
-	    "who am I": "You are human meatbag identifer `{user}`.",
-	    "uptime": "sys:uptime"
-    }
+
 
     # Run our conversation loop.
     conv.listen()
