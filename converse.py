@@ -1,12 +1,16 @@
 #!/usr/bin/env python
 
-import argparse, ConfigParser, sys, json, os
+import argparse, ConfigParser, json, random
 from slackclient import SlackClient
 from time import sleep
+import webutil
 
+tools = webutil.webmethods()
 
 class Converser:
     topics = {}
+    business = {}
+    images = {}
     client = None
     debug = False
     my_user_name = ''
@@ -33,11 +37,31 @@ class Converser:
                 print("Exception: ", e.message)
 
     def process_message(self, message):
+
+        # General Trigger words
         for topic in self.topics.keys():
             if topic.lower() in message['text'].lower():
                 response = self.topics[topic].format(**message)
-                # if response.startswith("sys:"):
-                    # response = os.popen(response[3:]).read()
+
+                # Give one pug
+                if response == 'pug':
+                    response = tools.pugme()
+
+                if response == 'cat':
+                    response = tools.catme()
+
+                if response == 'gif':
+                    search = message
+                    response = tools.gifme(message['text'])
+
+                print("Posting to [%s]: %s" % (message['channel'], response))
+                self.post(message['channel'], response)
+
+        # Business Cat
+        for topic in self.business:
+            # Business triggers
+            if topic.lower() in message['text'].lower():
+                response = random.choice(conv.images)
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
 
@@ -52,7 +76,7 @@ class Converser:
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=''' This script posts responses to trigger phrases. Run with: converse.py topics.json ''', epilog='''''')
+    parser = argparse.ArgumentParser(open('arg', 'r').read())
     parser.add_argument('-d', action='store_true', help="Print debug output.", required=False )
 
     args = parser.parse_args()
@@ -71,8 +95,12 @@ if __name__ == "__main__":
     conv.connect(token)
 
     # Add our topics to the converser
-    with open('topics.json') as data_file:
-        conv.topics = json.load(data_file)
+    with open('topics.json') as data_file_1:
+        conv.topics = json.load(data_file_1)
+    with open('business.json') as data_file_2:
+        conv.business = json.load(data_file_2)
+    with open('images.json') as image_file:
+        conv.images = json.load(image_file)
 
 
 
