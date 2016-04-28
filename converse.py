@@ -49,7 +49,7 @@ class Converser:
                 response = self.topics[topic].format(**message)
 
                 if response == "help":
-                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`\n`<Drunk Friend>`"
+                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`\n`<quoteme>`"
 
 
                 # Give one pug
@@ -63,6 +63,9 @@ class Converser:
                 # Give a gif
                 if response == 'gif':
                     response = tools.gifme(message['text'])
+
+                if response == 'quote':
+                    response = tools.quoteme()
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)

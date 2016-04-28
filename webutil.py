@@ -1,4 +1,5 @@
 import requests, re, json, random
+from HTMLParser import HTMLParser
 class webmethods():
     def pugme(self):
         url = 'http://www.pugbomb.me/'
@@ -24,8 +25,11 @@ class webmethods():
         r = [elem['url'] for elem in r['data']]
         return random.choice(r)
 
+    def quoteme(self):
+        with open('quotes.txt', 'r') as f:
+            lst = f.readlines()
+        f.close()
+        return random.choice(lst)
 
-
-#
-# test = webmethods()
-# print test.mememe()
+test = webmethods()
+test.quoteme()

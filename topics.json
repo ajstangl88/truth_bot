@@ -2,20 +2,22 @@
   "what time is it": "Your time to shine baby! \n No, just kidding it's time for you to shut the hell up...",
   "who am I": "You are human meatbag identifer `{user}`.",
   "uptime": "`{ts}`",
-  "betterbot": "How can I help lay down some truth?",
+  "god-bot": "At your service!\nCan you figure out what I can do?",
   "who are you": "I'm truth bot",
-  "who built you": "I'm not sure...\n AJ stole a bunch of code and here I am",
+  "who built you": "I'm not sure...\n AJ stole a bunch of code... And here I am\n Would you like to know more?...https://github.com/AJStangl/truth_bot",
   "AJ": "That guy is the best!",
   "Chicken Butt": "Guess what?",
   "Cats": "Cats are the best!",
   "work": "Don't you mean that thing you should be doing like AJ?",
   "kittens": "They're precious treasures!",
   "slackbot": "That fucking hack?!",
-  "who are you": "Your Daddy, Sugar Daddy!",
+  "who are you": "Who are you?",
+  "what do you do?": "Make your dreams come true",
   "helpme": "help",
   "pugme": "pug",
   "catme": "cat",
-  "gifme": "gif"
+  "gifme": "gif",
+  "quoteme": "quote"
 
 }
 
