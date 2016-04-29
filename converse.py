@@ -66,6 +66,9 @@ class Converser:
 
                 if response == 'quote':
                     response = tools.quoteme()
+                    
+                if response == 'insult':
+                    response = tools.insultme()
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
