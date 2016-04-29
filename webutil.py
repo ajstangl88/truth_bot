@@ -30,6 +30,12 @@ class webmethods():
             lst = f.readlines()
         f.close()
         return random.choice(lst)
+        
+    def insultme(self):
+        r = requests.get(url='http://www.insultgenerator.org/')
+        r = r.content
+        result = re.search('<br><br>(.+?)</div>',r).group(1)
+        return result.encode()
 
-test = webmethods()
-test.quoteme()
+# test = webmethods()
+# test.quoteme()
