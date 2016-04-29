@@ -49,7 +49,8 @@ class Converser:
                 response = self.topics[topic].format(**message)
 
                 if response == "help":
-                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`\n`<quoteme>`"
+                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`" \
+                               "\n`<quoteme>`\n`<montyme>`\n`<insultme>`"
 
 
                 # Give one pug
@@ -69,6 +70,9 @@ class Converser:
                     
                 if response == 'insult':
                     response = tools.insultme()
+
+                if response == 'monty':
+                    response = tools.montyme()
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
