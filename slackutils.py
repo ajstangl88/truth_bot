@@ -31,11 +31,8 @@ class slackUtils():
         filedir = random.choice(files)
 
         response = slack.files.upload(filedir, channels='casual-encounters')
-        print response.body
-
         return response
 
-#
-#
+
 # tool = slackUtils()
-# test = tool.postImage()
+# test = tool.userDump()
