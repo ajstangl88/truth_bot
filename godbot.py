@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-import argparse, ConfigParser, json, random, webutil, slackutils
+import argparse, ConfigParser, json, random, webutil, slackutils, time
 from slackclient import SlackClient
 from time import sleep
 from datetime import datetime
-import time
 
 tools = webutil.webmethods()
 utils = slackutils.slackUtils()
@@ -15,7 +14,6 @@ class Converser:
     client = None
     debug = False
     my_user_name = ''
-
 
     def connect(self, token):
         self.client = SlackClient(token)
@@ -41,7 +39,6 @@ class Converser:
             except Exception as e:
                 print("Exception: ", e.message)
 
-
     def process_message(self, message, start):
 
         # General Trigger words
@@ -52,6 +49,10 @@ class Converser:
                 response = self.topics[topic].format(**message)
 
                 # Responses that require other class level functions
+
+                if response == 'help':
+                    response = "Commands:`<pugme>`,`<catme>`,`<gifme search>`,`<quoteme>`,`<montyme>`,`<insultme>`,`<drunkme>`"
+
                 if response == 'pug':
                     response = tools.pugme()
 
@@ -62,15 +63,18 @@ class Converser:
                     response = tools.gifme(message['text'])
 
                 if response == 'quote':
-                    response = tools.quoteme()
+                    r = tools.quoteme()
+                    r = r.strip('\n')
+                    response = "`" + r + "`"
                     
                 if response == 'insult':
-                    response = tools.insultme()
+                    r = tools.insultme()
+                    response = "`" + r + "`"
 
                 if response == 'me':
                     users = utils.getUsers()
                     r = users[message['user']]
-                    r = "`"+r+"`"
+                    r = "`" + r + "`"
                     response = r
 
                 if response == 'ts':
@@ -81,13 +85,6 @@ class Converser:
 
                 if response == "drunk":
                     response = utils.postImage()
-
-
-
-
-
-
-
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
