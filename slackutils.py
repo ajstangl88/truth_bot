@@ -35,4 +35,7 @@ class slackUtils():
 
 
 # tool = slackUtils()
-# test = tool.userDump()
+# test = tool.getUsers()
+# users = []
+# for value in test.values(): users.append(value)
+# print "@" +  random.choice(users)

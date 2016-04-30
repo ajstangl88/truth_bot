@@ -51,7 +51,7 @@ class Converser:
                 # Responses that require other class level functions
 
                 if response == 'help':
-                    response = "Commands:`<pugme>`,`<catme>`,`<gifme search>`,`<quoteme>`,`<montyme>`,`<insultme>`,`<drunkme>`"
+                    response = "Commands:`<pugme>`,`<catme>`,`<gifme search>`,`<quoteme>`,`<insultme>`,`<drunkme>`"
 
                 if response == 'pug':
                     response = tools.pugme()
@@ -69,7 +69,12 @@ class Converser:
                     
                 if response == 'insult':
                     r = tools.insultme()
-                    response = "`" + r + "`"
+                    n = utils.getUsers()
+                    u = []
+                    for value in n.values(): u.append(value)
+                    rand = random.choice(u)
+
+                    response = "`" + "@" + rand + ": " + r + "`"
 
                 if response == 'me':
                     users = utils.getUsers()
