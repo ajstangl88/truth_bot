@@ -1,13 +1,12 @@
 #!/usr/bin/env python
-
-
-
-import argparse, ConfigParser, json, random, os
+import argparse, ConfigParser, json, random, webutil, slackutils
 from slackclient import SlackClient
 from time import sleep
-import webutil
+from datetime import datetime
+import time
 
 tools = webutil.webmethods()
+utils = slackutils.slackUtils()
 
 class Converser:
     topics = {}
@@ -17,14 +16,15 @@ class Converser:
     debug = False
     my_user_name = ''
 
+
     def connect(self, token):
         self.client = SlackClient(token)
-        # self.client.api_call(method='file.upload')
         self.client.rtm_connect()
         self.my_user_name = self.client.server.username
         print("Connected to Slack.")
 
     def listen(self):
+
         while True:
             try:
                 input = self.client.rtm_read()
@@ -33,13 +33,16 @@ class Converser:
                         if self.debug:
                             print(action)
                         if 'type' in action and action['type'] == "message":
-                            self.process_message(action)
+                            self.process_message(action, start)
+
+
                 else:
                     sleep(1)
             except Exception as e:
                 print("Exception: ", e.message)
 
-    def process_message(self, message):
+
+    def process_message(self, message, start):
 
         # General Trigger words
         for topic in self.topics.keys():
@@ -48,15 +51,13 @@ class Converser:
             if topic.lower() in message['text'].lower():
                 response = self.topics[topic].format(**message)
 
-                # Give one pug
+                # Responses that require other class level functions
                 if response == 'pug':
                     response = tools.pugme()
 
-                # Give a cat
                 if response == 'cat':
                     response = tools.catme()
 
-                # Give a gif
                 if response == 'gif':
                     response = tools.gifme(message['text'])
 
@@ -66,8 +67,27 @@ class Converser:
                 if response == 'insult':
                     response = tools.insultme()
 
-                if response == 'monty':
-                    response = tools.montyme()
+                if response == 'me':
+                    users = utils.getUsers()
+                    r = users[message['user']]
+                    r = "`"+r+"`"
+                    response = r
+
+                if response == 'ts':
+                    current = time.time() - start
+                    dt_obj = datetime.utcfromtimestamp(current)
+                    r = str(dt_obj).strip('1970-01-01').split(".")[0]
+                    response = "`" + r + "`"
+
+                if response == "drunk":
+                    utils.postImage()
+
+
+
+
+
+
+
 
                 print("Posting to [%s]: %s" % (message['channel'], response))
                 self.post(message['channel'], response)
@@ -119,4 +139,5 @@ if __name__ == "__main__":
 
 
     # Run our conversation loop.
+    start = time.time()
     conv.listen()

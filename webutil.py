@@ -37,5 +37,8 @@ class webmethods():
         result = re.search('<br><br>(.+?)</div>',r).group(1)
         return result.encode()
 
+
+
+
 # test = webmethods()
 # test.quoteme()
