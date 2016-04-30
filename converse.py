@@ -48,10 +48,6 @@ class Converser:
             if topic.lower() in message['text'].lower():
                 response = self.topics[topic].format(**message)
 
-                if response == "help":
-                    response =
-
-
                 # Give one pug
                 if response == 'pug':
                     response = tools.pugme()

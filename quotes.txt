@@ -1,0 +1,95 @@
+A society that will trade a little order for a little freedom will lose both, and deserve neither. -- Thomas Jefferson
+Dissent is the highest form of patriotism. -- Thomas Jefferson
+They that give up essential liberty to obtain a little temporary safety deserve neither liberty or safety. -- Benjamin Franklin
+Restriction of free thought and free speech is the most dangerous of all subversions. It is the one un-American act that could most easily defeat us. -- Justice William O. Douglas
+Necessity is the plea for every infringement of human freedom. It is the argument of tyrants; it is the creed of slaves. -- William Pitt (Earl of Chatham), speech in the House of Lords, November 18, 1783
+To announce that there must be no criticism of the President, or that we are to stand by the President, right or wrong, is not only unpatriotic and servile, but is morally treasonable to the American public. -- Theodore Roosevelt (1918)
+But, after all, it is the leaders of the country who determine the policy and it is always a simple matter to drag the people along, whether it is a democracy, or a fascist dictatorship, or a Parliament, or a Communist dictatorship. [...] Oh, that is all well and good, but, voice or no voice, the people can always be brought to the bidding of the leaders. That is easy. All you have to do is tell them they are being attacked, and denounce the peacemakers for lack of patriotism and exposing the country to danger. It works the same in any country. -- Hermann Göering
+The danger to political dissent is acute where the Government attempts to act under so vague a concept as the power to protect "domestic security." Given the difficulty of defining the domestic security interest, the danger of abuse in acting to protect that interest becomes apparent. -- U.S. Supreme Court decision (407 U.S. 297 (1972)
+Patriotism is the last refuge of a scoundrel. -- Samuel Johnson
+The difference between patriotism and nationalism is that the patriot is proud of his country for what it does, and the nationalist is proud of his country no matter what it does; the first attitude creates a feeling of responsibility, but the second a feeling of blind arrogance that leads to war. -- Sydney J. Harris
+The test of our progress is not whether we add more to the abundance of those who have much; it is whether we provide enough for those who have too little. -- Franklin D. Roosevelt, 32nd president of the US (1882-1945)
+As nightfall does not come at once, neither does oppression. In both instances there is a twilight where everything remains seemingly unchanged, and it is in such a twilight that we must be aware of the change in the air, however slight, lest we become unwitting victims of the darkness. -- Supreme Court Justice William O. Douglas
+Since when have we Americans been expected to bow submissively to authority and speak with awe and reverence to those who represent us? -- Supreme Court Justice William O. Douglas
+The Constitution is not neutral. It was designed to take the government off the backs of people. -- Supreme Court Justice William O. Douglas
+You don't lead by hitting people over the head-that's assault, not leadership. -- Dwight D. Eisenhower
+May we never confuse honest dissent with disloyal subversion. -- Dwight D. Eisenhower
+Unix: It's a nice place to live, but you wouldn't want to visit there.
+Unix is the answer, but only if you phrase the question very carefully.
+UNIX is user friendly; it's just picky about who its friends are.
+Unix is simple, but it takes a genius to understand the simplicity. --Dennis Ritchie
+VMS is a text-only adventure game. If you win you can use unix.
+VMS isn't the answer. VMS is the question. The answer is no. -- Jim Frost
+UNIX was not designed to stop you from doing stupid things, because that would also stop you from doing clever things. -- Doug Gwyn
+If you aim the gun at your foot and pull the trigger, it's UNIX's job to ensure reliable delivery of the bullet to where you aimed the gun (in this case, Mr. Foot). -- Terry Lambert
+Unix gives you just enough rope to hang yourself -- and then a couple of more feet, just to be sure. -- Eric Allman
+If you have any trouble sounding condescending, find a Unix user to show you how it's done. -- Scott Adams
+C is quirky, flawed, and an enormous success. --Dennis Ritchie
+one of the main causes of the fall of the Roman Empire was that, lacking zero, they had no way to indicate successful termination of their C programs --Robert Firth
+Interestingly, most Unix utilities have a command line option which will cause the system to rip the user's legs off and beat them to death with the soggy ends. This is often the default behaviour. -- Bruce Murphy
+IBM's Unix license is irrevocable, perpetual and fully paid up. It cannot be terminated. It can't be bargained with. It can't be reasoned with. It does not feel pity, remorse, or fear. And it absolutely will not stop, ever, until you are dead. --Slashdot
+We're not going to commit 2000 pages of memory, unless it meets your particular memory allocation needs. --Kurt Lidl
+Programmer teaching mathematics:
+Assume we have 1000 apples, or let's take a round figure, 1024 apples.
+We should be ADVANCING on X.400 --Albert Langer
+With rifles and flamethrowers. --Henry Spencer
+The two main design principles of the NeXT machine appear to be revenge and spite. --Don Lancaster
+My theory is that IBM believes that when they urinate in something, it improves the flavor. -- Daniel P. B. Smith
+We may just have to destroy USENET, in order to save it. -- Kurt Lidl
+Internet mail headers are not unlike giblets. -- Paul Vixie
+If you do not like the Internet e-mail system, you are free to abandon your use of it. One less cretin sending e-mail is a net gain. -- Mark Crispin
+BSD is for people who love UNIX. Linux is for those who hate Microsoft.
+If I had wanted your website to make noise, I would have licked my finger and rubbed it across my monitor.
+Points to Ponder
+When you discover a fluke, first determine if a whale is attached to it.
+When you have learned to snatch the error code from the trap frame, it will be time for you to leave.
+Engineering sets the upper limit of success.
+Marketing determines how far up that success space the product travels.
+Okay, who stopped the payment on my reality check?
+Reality and I had a fundamental differing of opinions. We're currently undergoing a trial separation.
+A prime candidate for natural deselection.
+Some drink from the fountain of knowledge; he only gargled.
+Everyone has a photographic memory, but some don't have film.
+Madness takes its toll. Please have exact change.
+If idiots could fly, the sky would be pitch black.
+We have enough youth. How about a fountain of `smart'?
+The terrible thing about searching for truth is that sometimes you actually find it.
+Bill Gates is a monocle and a white fluffy cat from being a villain in the next Bond film. -- Dennis Miller
+You have lazy and argumentative and hateful friends. That doesn't mean we don't love you any less. -- J. Hsu
+On Michael Capellas appointment as CEO of Worldcom: I'm glad they have a new CEO. I hope he's up to the task, and that his vision isn't crushed by the deafening sound of dialtone. -- Mike O'Dell
+Don't worry about people stealing your ideas. If your ideas are any good, you'll have to ram them down people's throats. -- Howard Aiken
+I'm bitter but not disappointed. But somehow Microsoft, like the Bush administration, always manages to be worse than I expected. -- M. Shields
+There's never time to do it right, but always time to do it over.
+The rational view of the world is but one of many. -- Harold Walls
+Man will occasionally stumble over the truth, but most of the time he will pick himself up and continue on. -- Churchill, Winston
+What part of Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn don't you understand?
+Give a man a gun, he can rob a bank
+Give a banker an algorithm, he can rob the world.
+The trouble with ignorance is that it feels so much like expertise.
+If everything is under control, you are moving too slow. -- Mario Andretti
+Everyone makes mistakes. The trick is to make them when nobody is looking.
+What is this talk of 'release'? Klingons do not make software 'releases'. Our software 'escapes' leaving a bloody trail of designers and quality assurance people in its wake. -- Worf
+Our users will know fear and cower before our software! Ship it! Ship it and let them flee like the dogs they are! -- Worf
+sic transit gloria mundi: So the glory of this world passes away.
+carpe sharpei: seize the wrinkle dog.
+sharpei diem: day of the wrinkle dog.
+Catapultam habeo. Nisi pecuniam omnem mihi dabis, ad caput tuum saxum immane mittam: I have a catapult. Give me all your money, or I will fling an enormous rock at your head.
+Cum catapultae proscriptae erunt tum soli proscripti catapultas habebunt: When catapults are outlawed, only outlaws will have catapults.
+All nouns can be verbed. -- traditional
+Verbing weirds language. -- Bill Watterson, Calvin and Hobbes
+First they came for the verbs, and I said nothing because verbing weirds language. Then they arrival for the nouns, and I speech nothing because I no verbs. -- Peter Ellis, as posted in alt.fan.pratchett
+aibohphobia, n.: a fear of palindromes
+The problem with defending the purity of the English language is that English is about as pure as a cribhouse whore. We don't just borrow words; on occasion, English has pursued other languages down alleyways to beat them unconscious and rifle their pockets for new vocabulary. -- James D. Nicoll
+Nauseous. Nauseated. The first means 'sickening to contemplate'; the second means 'sick at the stomach.' Do not, therefore, say, 'I feel nauseous,' unless you are sure you have that effect on others. -- William Strunk Jr., "The Elements of Style"
+Other Interesting Pieces of Information
+The Tao of Programming, a short guide for those who program, and those who must deal with programmers. This is similiar to the Washington Post's advertisement campaign, If you don't get it, you don't get it.
+The Philosopher's Drinking Song, which one of my friends claimed to have never heard of, is now available for your reading pleasure. I believe it comes from a Monty Python comedy routine.
+Threes, Rev. 1.1 -- a filk song that describes the true nature of a Dog and Pony Show. (local copies)
+Fundamentalism is fundamentally wrong.
+Dilbert is a documentary.
+I don't want to call a destructor on my objects, I want to call a destroyer. Gozer has come for your memory, little PersistentNode! -- Joel Gluth
+Hmm, the word "Necrodotcomnicon" has just popped into my brain, but I don't know what to do with it. -- Malcolm Ray
+Why kill when you can overkill? -- Vijay Gill
+I sat around during the design phase going "this is going to suck so badly that we're going to have to hold onto desks to stop us from being drawn into the vortex". -- Chris "Saundo" Saunderson
+Photography is truth. The cinema is truth twenty-four times a second. -- Jean-Luc Godard
+A man with one clock knows what time it is. A man with two clocks is never sure.
