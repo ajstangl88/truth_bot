@@ -80,7 +80,7 @@ class Converser:
                     response = "`" + r + "`"
 
                 if response == "drunk":
-                    utils.postImage()
+                    response = utils.postImage()
 
 
 
