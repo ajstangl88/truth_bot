@@ -49,8 +49,7 @@ class Converser:
                 response = self.topics[topic].format(**message)
 
                 if response == "help":
-                    response = "Commands:" "\n`<pugme>`\n`<catme>`\n`<gifme search>`" \
-                               "\n`<quoteme>`\n`<montyme>`\n`<insultme>`"
+                    response =
 
 
                 # Give one pug
