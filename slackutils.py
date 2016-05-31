@@ -1,5 +1,5 @@
 from slacker import Slacker
-import ConfigParser, json, os, random
+import ConfigParser, json, os, random, aiml, requests, websocket
 """
 Additioanl API calls for client currently not supported by slackClient
 """
@@ -34,8 +34,13 @@ class slackUtils():
         return response
 
 
+
+
+
+
+
 # tool = slackUtils()
-# test = tool.getUsers()
+# test = tool.listen()
 # users = []
 # for value in test.values(): users.append(value)
 # print "@" +  random.choice(users)

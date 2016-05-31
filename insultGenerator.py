@@ -67,7 +67,7 @@ class insultMe:
         ]
 
         fuckingDescription = [
-            "That verbnoun just cut me off!",
+            "That verb noun just cut me off!",
             "My boss is a major verb noun!",
             "Don't tell her I said this, but that dude she's with is a real verb noun!",
             "Quit being such a verb noun!",
@@ -94,11 +94,12 @@ class insultMe:
         ]
         noun = random.choice(noun)
         cuss = random.choice(cussing)
-        sentance = random.choice(fuckingDescription)
+        sentence = random.choice(fuckingDescription)
 
-        sentance = sentance.replace("noun", noun)
-        sentance = sentance.replace("verb", cuss)
-        return sentance
-insult = insultMe()
-fuck = insult.constructInstult()
+        sentence = sentence.replace("noun", noun)
+        sentence = sentence.replace("verb", cuss)
+        return sentence
 
+test = insultMe()
+insult = test.constructInstult()
+print insult

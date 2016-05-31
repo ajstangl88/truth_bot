@@ -2,7 +2,6 @@
   "what time is it": "Your time to shine baby! \n No, just kidding it's time for you to shut the hell up...",
   "who am I": "me",
   "uptime": "ts",
-  "godbot": "At your service!\nCan you figure out what I can do?",
   "who built you": "I'm not sure...\n AJ stole a bunch of code... And here I am\n Would you like to know more?...https://github.com/AJStangl/truth_bot",
   "AJ": "That guy is the best!",
   "Chicken Butt": "Guess what?",
@@ -17,6 +16,7 @@
   "quoteme": "quote",
   "insultme": "insult",
   "montyme": "monty",
-  "drunkme": "drunk"
+  "drunkme": "drunk",
+  "@godbot": "chat"
 }
 
