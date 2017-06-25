@@ -176,13 +176,21 @@ if __name__ == "__main__":
     # Run our conversation loop.
     start = time.time()
     k = aiml.Kernel()
-    k.bootstrap(brainFile = "Omegle.brn") #Brain file
-    k.setBotPredicate("name" , "Lisa") #Name of the bot
-    k.setBotPredicate("age" , "Well, 19") #Age of the bot
-    k.setBotPredicate("gender", "Female") #Gender of the bot
-    k.setBotPredicate("location" , "USA")#Location of the bot
-    k.setBotPredicate("birthday","November 23rd 1993")#Birthdate of the bot
-    k.setBotPredicate("nationality","Asian")#Nationality of the bot
-    k.setBotPredicate("asl", "19/F/USA")
-    k.setBotPredicate("species", "girl")
+    k.bootstrap(learnFiles = "std-startup.xml", commands = "load aiml b")
+    k.setBotPredicate(name="name", value="Lisa")
+    k.setBotPredicate(name="age", value="29")
+    k.setBotPredicate("nationality","Asian")
+    k.setBotPredicate("location", "Balls Deep")
+    k.setBotPredicate(name="gender", value="female")
+    k.setBotPredicate(name="species", value="girl")
+    k.setBotPredicate(name="genus", value="people")
+    # k.bootstrap(brainFile = "Omegle.brn") #Brain file
+    # k.setBotPredicate("name" , "Lisa") #Name of the bot
+    # k.setBotPredicate("age" , "Well, 19") #Age of the bot
+    # k.setBotPredicate("gender", "Female") #Gender of the bot
+    # k.setBotPredicate("location" , "USA")#Location of the bot
+    # k.setBotPredicate("birthday","November 23rd 1993")#Birthdate of the bot
+    # k.setBotPredicate("nationality","Asian")#Nationality of the bot
+    # k.setBotPredicate("asl", "19/F/USA")
+    # k.setBotPredicate("species", "girl")
     conv.listen()

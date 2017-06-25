@@ -30,7 +30,7 @@ class slackUtils():
             files.append(os.path.join(path, elem))
         filedir = random.choice(files)
 
-        response = slack.files.upload(filedir, channels='casual-encounters')
+        response = slack.files.upload(filedir, channels='#root-access')
         return response
 
 
